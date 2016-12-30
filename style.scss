@@ -19,7 +19,7 @@ html {
 
 body {
   background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 20px/1.4 $georgia;
   color: $darkGray;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $georgia;
   color: $darkerGray;
   font-weight: bold;
 
@@ -42,6 +42,10 @@ h1, h2, h3, h4, h5, h6 {
   @include mobile {
     line-height: 1.4;
   }
+}
+
+h1 {
+  font-family: $helveticaNeue;
 }
 
 h1 {
@@ -72,6 +76,7 @@ p {
 }
 
 a {
+  font-family: $helvetica;
   color: $link-color;
   text-decoration: none;
 	cursor: pointer;
@@ -287,4 +292,4 @@ footer {
 
 // @import "highlights";
 @import "jekyll-mono";
-// @import "css/syntax.scss";
+@import "css/monokai_custom.scss";
