@@ -19,12 +19,12 @@ A few days ago I found a ATtiny2313 lying around my home. For a while now I've b
 **3.** Open the the example sketch 'ArduinoISP' from `File -> Examples -> ArduinoISP`.
 
 **4.** I used an older tutorial so the wiring is a bit different for my chip, so I told the Arduino to use the old pins with the following line of code.
+
 ```c
 #define USE_OLD_STYLE_WIRING true
+int this = 10;
 ```
-{% highlight c %}
-#define USE_OLD_STYLE_WIRING true
-{% endhighlight %}
+
 I put it right under the `#define PROG_FLICKER true` snippet of code.
 
 **5.** Compile and upload the program to the arduino.
