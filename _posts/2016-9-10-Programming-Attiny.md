@@ -22,6 +22,9 @@ A few days ago I found a ATtiny2313 lying around my home. For a while now I've b
 ```c
 #define USE_OLD_STYLE_WIRING true
 ```
+{% highlight c %}
+#define USE_OLD_STYLE_WIRING true
+{% endhighlight %}
 I put it right under the `#define PROG_FLICKER true` snippet of code.
 
 **5.** Compile and upload the program to the arduino.
@@ -51,6 +54,6 @@ This picture was found in [this tutorial](http://www.ernstc.dk/arduino/2313.htm)
 
 **4.** Upload your sketch using `Sketch -> Upload using programmer`. (The IDE should understand what you are trying to do and it may work if you just use the normal upload button).
 
-#####YAY!! Blinking light
+##### YAY!! Blinking light
 
 I was really excited to be able to program the chip but I immediately began running into issues. First of all the memory available of on the ATtiny2313 is really puny (2kb). Then the Arduino library takes up about half of that so you only have a little bit left for programming. Furthermore the ATtiny2313 processor doesn't support analogread() (which doesn't really make sense because it has a comparator and two analog in pins). Regardless I would recommend another type of ATtiny chip for any projects that use analog functionality.
