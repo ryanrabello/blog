@@ -27,6 +27,23 @@
      }
  }
 
+ .up-next {
+   font-family: $helveticaNeue;
+
+   small {
+     font-weight: bold;
+     font-size: .75em;
+     color: lightgray;
+     text-transform: uppercase;
+   }
+
+   a {
+     color: $h1-color;
+     font-size: 30px;
+     font-weight: bold;
+   }
+ }
+
  .post-heading {
         a {
          color: $hl-color;
@@ -109,7 +126,7 @@ button.button-primary:focus {
 
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading{
-    padding: 150px 0;
+    padding: 100px 0 150px 0;
   }
 }
 

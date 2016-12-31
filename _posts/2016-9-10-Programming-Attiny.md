@@ -8,7 +8,7 @@ A few days ago I found a ATtiny2313 lying around my home. For a while now I've b
 
 ##### Ingredients
 * **Arduino Uno** (you can use any of the other boards supported by the [Arduino ISP](https://www.arduino.cc/en/Tutorial/ArduinoISP))
-* **ATtiny2313** (you can use any other ATtiny chip that is supported by the [arduino-tiny](https://code.google.com/archive/p/arduino-tiny/) library.
+* **ATtiny2313** (you can use any other ATtiny chip that is supported by the [arduino-tiny](https://code.google.com/archive/p/arduino-tiny/) library.)
 * **10 μF Capacitor** (if your using an Arduino Uno)
 
 ##### Arduino ISP
@@ -20,9 +20,8 @@ A few days ago I found a ATtiny2313 lying around my home. For a while now I've b
 
 **4.** I used an older tutorial so the wiring is a bit different for my chip, so I told the Arduino to use the old pins with the following line of code.
 
-```c
+```c++
 #define USE_OLD_STYLE_WIRING true
-int this = 10;
 ```
 
 I put it right under the `#define PROG_FLICKER true` snippet of code.

@@ -10,6 +10,14 @@ layout: blog
     {{ content }}
   </div>
 
+
+
   {% include disqus.html %}
 </article>
 
+{%if page.previous %}
+  <div class="up-next" style="text-align:center;margin-top:30px;">
+    <small>Read More</small><br />
+    <a href="{{page.previous.url}}">{{page.previous.title}}</a>
+  </div>
+{% endif %}
